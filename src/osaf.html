@@ -1,247 +1,962 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
     <section class="bg-[#6b6b6b] text-white">
-        <nav class="max-w-300 mx-auto p-5 flex items-center justify-between">
-            <img src="./images_osaf/Logo (2).png" alt="">
+      <nav class="max-w-300 mx-auto p-5 flex items-center justify-between">
+        <img src="./images_osaf/Logo (2).png" alt="" />
 
-            <div class="lg:flex hidden border-2 border-white py-[10px] px-[50px] rounded-[10px]">
-                <input placeholder="Search bar" type="search">
+        <div
+          class="lg:flex hidden border-2 border-white py-[10px] px-[50px] rounded-[10px]"
+        >
+          <input placeholder="Search bar" type="search" />
 
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.707 20.293L18.025 16.611C19.258 15.071 20 13.122 20 11C20 6.038 15.962 2 11 2C6.038 2 2 6.038 2 11C2 15.962 6.038 20 11 20C13.122 20 15.071 19.258 16.611 18.025L20.293 21.707L21.707 20.293ZM4 11C4 7.14 7.14 4 11 4C14.86 4 18 7.14 18 11C18 14.86 14.86 18 11 18C7.14 18 4 14.86 4 11Z" fill="#E6E6E6"/>
-                </svg>
-            </div>
-
-            <div class="lg:flex hidden">
-                <p>Category</p>
-
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="white"/>
-                </svg>
-            </div>
-
-            <p class="hidden lg:flex">Become an Mentor</p>
-
-            <div class="flex items-center gap-[10px]">
-                <button class="py-[10px] px-[30px] border-2 border-white rounded-[10px] hidden lg:flex">Login</button>
-                <button class="py-[10px] px-[30px] bg-[#F72585] rounded-[10px]">Sign Up</button>
-            </div>
-        </nav>
-
-        <div class="max-w-300 mx-auto p-5 flex flex-col gap-[20px] lg:gap-[30px] pb-[100px] items-start">
-            <div class="lg:flex items-center max-w-300 mx-auto hidden ml-[0px]">
-                <p>Home</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.862 3.13798L9.724 7.99998L4.862 12.862L5.80467 13.8046L11.6093 7.99998L5.80467 2.19531L4.862 3.13798Z" fill="#E6E6E6"/>
-                </svg>
-                <p>Programming Courses</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.862 3.13798L9.724 7.99998L4.862 12.862L5.80467 13.8046L11.6093 7.99998L5.80467 2.19531L4.862 3.13798Z" fill="#E6E6E6"/>
-                </svg>
-                <p>How to become an Expert Web Developer</p>
-            </div>
-            
-            <h1 class="text-[40px] font-bold leading-12 lg:text-[48px] lg:mt-[60px] lg:leading-14">How to become an Expert <br> Web Developer</h1>
-            
-            <img src="./images_osaf/Rating.png" alt="">
-            
-            <div class="flex items-center gap-[10px]">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="25" cy="25" r="25" fill="#AAAAAA"/>
-                </svg>
-                
-                <p class="text-[20px] font-bold">Pak Arif Satria Kecek ulalala</p>
-            </div>
-            
-            <div class="lg:flex-row flex flex-col gap-[10px]">
-                <button class="flex py-[10px] px-[30px] bg-[#F72585] rounded-[10px] self-start">
-                    <p>Add To Wishlist</p>
-                    
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 10.5H21V13.5H13.5V21H10.5V13.5H3V10.5H10.5V3H13.5V10.5Z" fill="white"/>
-                    </svg>
-                </button>
-                
-                <button class="py-[10px] px-[30px] bg-white rounded-[10px] text-[#F72585] flex self-start">
-                    <p>Share</p>
-                    
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6C17.4477 6 17 5.55228 17 5C17 4.44772 17.4477 4 18 4C18.5523 4 19 4.44772 19 5C19 5.55228 18.5523 6 18 6ZM6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13ZM18 20.02C17.4477 20.02 17 19.5723 17 19.02C17 18.4677 17.4477 18.02 18 18.02C18.5523 18.02 19 18.4677 19 19.02C19 19.5723 18.5523 20.02 18 20.02Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08ZM18 4C18.55 4 19 4.45 19 5C19 5.55 18.55 6 18 6C17.45 6 17 5.55 17 5C17 4.45 17.45 4 18 4ZM6 13C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11C6.55 11 7 11.45 7 12C7 12.55 6.55 13 6 13ZM18 20.02C17.45 20.02 17 19.57 17 19.02C17 18.47 17.45 18.02 18 18.02C18.55 18.02 19 18.47 19 19.02C19 19.57 18.55 20.02 18 20.02Z" fill="#F72585"/>
-                    </svg>
-                </button>
-            </div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.707 20.293L18.025 16.611C19.258 15.071 20 13.122 20 11C20 6.038 15.962 2 11 2C6.038 2 2 6.038 2 11C2 15.962 6.038 20 11 20C13.122 20 15.071 19.258 16.611 18.025L20.293 21.707L21.707 20.293ZM4 11C4 7.14 7.14 4 11 4C14.86 4 18 7.14 18 11C18 14.86 14.86 18 11 18C7.14 18 4 14.86 4 11Z"
+              fill="#E6E6E6"
+            />
+          </svg>
         </div>
+
+        <div class="lg:flex hidden">
+          <p>Category</p>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7 10L12 15L17 10H7Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <p class="hidden lg:flex">Become an Mentor</p>
+
+        <div class="flex items-center gap-[10px]">
+          <button
+            class="py-[10px] px-[30px] border-2 border-white rounded-[10px] hidden lg:flex"
+          >
+            Login
+          </button>
+          <button class="py-[10px] px-[30px] bg-[#F72585] rounded-[10px]">
+            Sign Up
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="max-w-300 mx-auto p-5 flex flex-col gap-[20px] lg:gap-[30px] pb-[100px] items-start"
+      >
+        <div class="lg:flex items-center max-w-300 mx-auto hidden ml-[0px]">
+          <p>Home</p>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.862 3.13798L9.724 7.99998L4.862 12.862L5.80467 13.8046L11.6093 7.99998L5.80467 2.19531L4.862 3.13798Z"
+              fill="#E6E6E6"
+            />
+          </svg>
+          <p>Programming Courses</p>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.862 3.13798L9.724 7.99998L4.862 12.862L5.80467 13.8046L11.6093 7.99998L5.80467 2.19531L4.862 3.13798Z"
+              fill="#E6E6E6"
+            />
+          </svg>
+          <p>How to become an Expert Web Developer</p>
+        </div>
+
+        <h1
+          class="text-[40px] font-bold leading-12 lg:text-[48px] lg:mt-[60px] lg:leading-14"
+        >
+          How to become an Expert <br />
+          Web Developer
+        </h1>
+
+        <img src="./images_osaf/Rating.png" alt="" />
+
+        <div class="flex items-center gap-[10px]">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="25" cy="25" r="25" fill="#AAAAAA" />
+          </svg>
+
+          <p class="text-[20px] font-bold">Pak Arif Satria Kecek ulalala</p>
+        </div>
+
+        <div class="lg:flex-row flex flex-col gap-[10px]">
+          <button
+            class="flex py-[10px] px-[30px] bg-[#F72585] rounded-[10px] self-start"
+          >
+            <p>Add To Wishlist</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.5 10.5H21V13.5H13.5V21H10.5V13.5H3V10.5H10.5V3H13.5V10.5Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="py-[10px] px-[30px] bg-white rounded-[10px] text-[#F72585] flex self-start"
+          >
+            <p>Share</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18 6C17.4477 6 17 5.55228 17 5C17 4.44772 17.4477 4 18 4C18.5523 4 19 4.44772 19 5C19 5.55228 18.5523 6 18 6ZM6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13ZM18 20.02C17.4477 20.02 17 19.5723 17 19.02C17 18.4677 17.4477 18.02 18 18.02C18.5523 18.02 19 18.4677 19 19.02C19 19.5723 18.5523 20.02 18 20.02Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08ZM18 4C18.55 4 19 4.45 19 5C19 5.55 18.55 6 18 6C17.45 6 17 5.55 17 5C17 4.45 17.45 4 18 4ZM6 13C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11C6.55 11 7 11.45 7 12C7 12.55 6.55 13 6 13ZM18 20.02C17.45 20.02 17 19.57 17 19.02C17 18.47 17.45 18.02 18 18.02C18.55 18.02 19 18.47 19 19.02C19 19.57 18.55 20.02 18 20.02Z"
+                fill="#F72585"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
 
     <section class="max-w-300 mx-auto p-5 mt-[100px]">
-        <div class="lg:flex justify-between">
-            <div class="lg:w-[60%]">
-                <div class="flex flex-col gap-[20px]">
-                    <h1 class="text-[40px] font-bold">What you’ll learn from this course</h1>
+      <div class="lg:flex justify-between">
+        <div class="lg:w-[60%]">
+          <div class="flex flex-col gap-[20px]">
+            <h1 class="text-[40px] font-bold">
+              What you’ll learn from this course
+            </h1>
 
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat</p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
+              a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis
+              non id proin elit placerat. Lectus morbi amet et aliquam magna
+              mauris. Proin pulvinar fringilla nunc, tristique urna, massa,
+              tincidunt.
+            </p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
+              a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis
+              non id proin elit placerat. Lectus morbi amet et aliquam magna
+              mauris. Proin pulvinar fringilla nunc, tristique urna, massa,
+              tincidunt.
+            </p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
+              a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis
+              non id proin elit placerat
+            </p>
+          </div>
+
+          <div>
+            <h1 class="text-[40px] font-bold mt-[50px]">Objectives Features</h1>
+
+            <div class="bg-[#FFF5F9] flex p-5 rounded-3xl gap-[30px]">
+              <div class="flex flex-col gap-[20px]">
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
                 </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
 
-                <div>
-                    <h1 class="text-[40px] font-bold mt-[50px]">Objectives Features</h1>
-
-                    <div class="bg-[#FFF5F9] flex p-5 rounded-3xl gap-[30px]">
-                        <div class="flex flex-col gap-[20px]">
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="flex flex-col gap-[20px]">
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                            <div class="flex">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z" fill="#F72585"/>
-                                </svg>
-                                
-                                <p>Build fully websites and web apps for your startup or business.</p>
-                            </div>
-                        </div>
-                    </div>
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
                 </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[20px]">
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                      fill="#F72585"
+                    />
+                  </svg>
+
+                  <p>
+                    Build fully websites and web apps for your startup or
+                    business.
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <div>
-                <div class="bg-[#626262] h-[313px] flex justify-center items-center rounded-t-3xl mt-[30px] lg:mt-0">
-                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 3.66675C11.88 3.66675 3.66666 11.8801 3.66666 22.0001C3.66666 32.1201 11.88 40.3334 22 40.3334C32.12 40.3334 40.3333 32.1201 40.3333 22.0001C40.3333 11.8801 32.12 3.66675 22 3.66675ZM18.3333 28.4167V15.5834C18.3333 14.8317 19.195 14.3917 19.8 14.8501L28.3617 21.2667C28.8567 21.6334 28.8567 22.3667 28.3617 22.7334L19.8 29.1501C19.195 29.6084 18.3333 29.1684 18.3333 28.4167Z" fill="white"/>
-                    </svg>
-                </div>
-
-                <div class="p-5">
-                    <p class="text-[24px] font-bold text-[#000129] pb-[10px]">$53 <span class="text-gray-700 line-through text-[18px] font-normal"> $124</span></p>
-
-                    <hr>
-
-                    <div class="flex mt-[20px] justify-between">
-                        <h1 class="text-[24px] text-[#000129] font-bold">64 Document courses</h1>
-                        <button class="bg-red-800 text-white p-[20px] rounded-[10px]">50% OFF</button>
-                    </div>
-
-                    <div class="flex justify-between text-[18px] mt-[20px]">
-                        <div>
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#4586D6]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                </svg>
-
-                                <p>24 Modules</p>
-                            </div>
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#4586D6]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                </svg>
-
-                                <p>24 Modules</p>
-                            </div>
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#4586D6]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                </svg>
-
-                                <p>24 Modules</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#4586D6]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                </svg>
-
-                                <p>24 Modules</p>
-                            </div>
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-[#4586D6]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                </svg>
-
-                                <p>24 Modules</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-[20px] mt-[20px]">
-                        <button class="py-[20px] px-[30px] rounded-[10px] bg-[#F72585] text-white text-[18px]">Add To Cart</button>
-                        <button class="py-[20px] px-[30px rounded-[10px] border-2 border-[#F72585] text-[#F72585] text-[18px]">Buy Now</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div>
+          <div
+            class="bg-[#626262] h-[313px] flex justify-center items-center rounded-t-3xl mt-[30px] lg:mt-0"
+          >
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22 3.66675C11.88 3.66675 3.66666 11.8801 3.66666 22.0001C3.66666 32.1201 11.88 40.3334 22 40.3334C32.12 40.3334 40.3333 32.1201 40.3333 22.0001C40.3333 11.8801 32.12 3.66675 22 3.66675ZM18.3333 28.4167V15.5834C18.3333 14.8317 19.195 14.3917 19.8 14.8501L28.3617 21.2667C28.8567 21.6334 28.8567 22.3667 28.3617 22.7334L19.8 29.1501C19.195 29.6084 18.3333 29.1684 18.3333 28.4167Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="p-5">
+            <p class="text-[24px] font-bold text-[#000129] pb-[10px]">
+              $53
+              <span class="text-gray-700 line-through text-[18px] font-normal">
+                $124</span
+              >
+            </p>
+
+            <hr />
+
+            <div class="flex mt-[20px] justify-between">
+              <h1 class="text-[24px] text-[#000129] font-bold">
+                64 Document courses
+              </h1>
+              <button class="bg-red-800 text-white p-[20px] rounded-[10px]">
+                50% OFF
+              </button>
+            </div>
+
+            <div class="flex justify-between text-[18px] mt-[20px]">
+              <div>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="text-[#4586D6]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <p>24 Modules</p>
+                </div>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="text-[#4586D6]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <p>24 Modules</p>
+                </div>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="text-[#4586D6]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <p>24 Modules</p>
+                </div>
+              </div>
+              <div>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="text-[#4586D6]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <p>24 Modules</p>
+                </div>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="text-[#4586D6]"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+
+                  <p>24 Modules</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[20px] mt-[20px]">
+              <button
+                class="py-[20px] px-[30px] rounded-[10px] bg-[#F72585] text-white text-[18px]"
+              >
+                Add To Cart
+              </button>
+              <button
+                class="py-[20px] px-[30px rounded-[10px] border-2 border-[#F72585] text-[#F72585] text-[18px]"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <section class="max-w-300 mx-auto p-5">
+      <h1 class="text-[40px] font-bold mt-[30px]">Requirement</h1>
+
+      <div>
+        <div
+          class="bg-[#FFF5F9] p-5 rounded-3xl flex flex-col gap-[20px] mt-[20px] lg:w-[70%]"
+        >
+          <div class="flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>
+              No programming experience needed - I'll teach you everything you
+              need to know
+            </p>
+          </div>
+          <div class="flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>A Mac or PC computer with access to the internet</p>
+          </div>
+          <div class="flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>No previous coding experience is needed</p>
+          </div>
+          <div class="flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>All tools and software used in this course will be free</p>
+          </div>
+          <div class="flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.70711 14.2929L19 5L20.4142 6.41421L9.70711 17.1213L4 11.4142L5.41421 10L9.70711 14.2929Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Any operating system: Mac, PC, Linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-300 mx-auto p-5 mt-[100px]">
+      <div class="flex items-center gap-[200px] pb-[30px]">
+        <h1 class="text-[40px] font-bold">Module Courses</h1>
+        <p class="hidden lg:flex text-[18px]">24 Modules - 124 Lectures - 24 h 12m</p>
+      </div>
+
+      <div class="lg:w-[70%] border-2 border-gray-300 rounded-2xl">
+        <div class="flex bg-[#FFF5F9] items-center rounded-t-2xl">
+          <h1 class="p-5">Introducing to Web Development</h1>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 9.41424L4.70711 16.7071L3.29289 15.2929L12 6.58582L20.7071 15.2929L19.2929 16.7071L12 9.41424Z"
+              fill="#1C3554"
+            />
+          </svg>
+        </div>
+
+        <div class="p-5 flex flex-col gap-[20px]">
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Welcome!</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 21H4V3H20V21ZM6 19H18V5H6V19ZM16 7H8V9H16V7ZM8 15H14V17H8V15ZM16 11H8V13H16V11Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Syllabus download</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 21H4V3H20V21ZM6 19H18V5H6V19ZM16 7H8V9H16V7ZM8 15H14V17H8V15ZM16 11H8V13H16V11Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Courses resources</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 21H4V3H20V21ZM6 19H18V5H6V19ZM16 7H8V9H16V7ZM8 15H14V17H8V15ZM16 11H8V13H16V11Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Join online group classes</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>How do website actually work?</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>What is Internet?</p>
+          </div>
+          <div class="flex gap-[10px]">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 21H4V3H20V21ZM6 19H18V5H6V19ZM16 7H8V9H16V7ZM8 15H14V17H8V15ZM16 11H8V13H16V11Z"
+                fill="#F72585"
+              />
+            </svg>
+
+            <p>Download 10 rules code</p>
+          </div>
+        </div>
+
+        <div class="p-5 flex flex-col gap-[20px] text-[18px] font-bold">
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>How the Internet works</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>Introducing HTML</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>Intermediate HTML</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>Introducing CSS</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>Intermediate CSS</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+          <div class="flex justify-between bg-[#FFF5F9] p-5">
+            <p>Introduction Bootstrap</p>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 14.5858L19.2929 7.29289L20.7071 8.70711L12 17.4142L3.29289 8.70711L4.70711 7.29289L12 14.5858Z"
+                fill="#1C3554"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <button
+          class="py-[20px] px-[30px] bg-[#F72585] rounded-[10px] text-white m-auto w-[100%]"
+        >
+          17 More Modules
+        </button>
+      </div>
+    </section>
+  </body>
 </html>
